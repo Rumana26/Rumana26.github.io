@@ -1,0 +1,77 @@
+:root {
+    --primary: #1e3a8a;
+    --accent: #2563eb;
+    --light: #f8fafc;
+    --dark: #1f2937;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--light);
+    color: var(--dark);
+}
+
+/* NAVBAR */
+nav {
+    background: white;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* HERO */
+header {
+    padding: 100px 8%;
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    color: white;
+    text-align: center;
+}
+
+/* CONTENT */
+.container {
+    padding: 60px 8%;
+}
+
+h2 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--dark);
+    color: white;
+}
