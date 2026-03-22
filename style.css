@@ -1,10 +1,11 @@
 :root {
     --primary: #1e3a8a;
     --accent: #2563eb;
-    --light: #f8fafc;
+    --light: #f1f5f9;
     --dark: #1f2937;
 }
 
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -14,51 +15,73 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     background: var(--light);
-    color: var(--dark);
-}
-
-/* NAVBAR */
-nav {
-    background: white;
-    padding: 15px 8%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--dark);
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: var(--accent);
-}
-
-/* HERO */
-header {
-    padding: 100px 8%;
-    background: linear-gradient(to right, var(--primary), var(--accent));
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: var(--primary);
     color: white;
-    text-align: center;
+    position: fixed;
+    padding: 30px 20px;
 }
 
-/* CONTENT */
-.container {
-    padding: 60px 8%;
+.sidebar img {
+    width: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.sidebar p {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 12px 0;
+}
+
+.sidebar ul a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.sidebar ul a:hover {
+    background: var(--accent);
+}
+
+/* MAIN CONTENT */
+.main {
+    margin-left: 260px;
+    padding: 40px;
+    width: 100%;
+}
+
+h1 {
+    color: var(--primary);
+    margin-bottom: 10px;
 }
 
 h2 {
+    margin: 20px 0;
     color: var(--primary);
-    margin-bottom: 20px;
 }
 
 .card {
@@ -66,12 +89,41 @@ h2 {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: var(--dark);
+/* CV BUTTON */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: var(--primary);
     color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: var(--accent);
+}
+
+/* CV PREVIEW */
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        margin-left: 0;
+    }
 }
