@@ -14,18 +14,19 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: var(--light);
-    display: flex;
+    background: #f1f5f9;
 }
+
 
 /* SIDEBAR */
 .sidebar {
     width: 260px;
     height: 100vh;
-    background: var(--primary);
+    background: #1e3a8a;
     color: white;
     position: fixed;
-    padding: 30px 20px;
+    top: 0;
+    left: 0;
 }
 
 .sidebar img {
@@ -71,7 +72,6 @@ body {
 .main {
     margin-left: 260px;
     padding: 40px;
-    width: 100%;
 }
 
 h1 {
@@ -89,7 +89,6 @@ h2 {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
 /* CV BUTTON */
