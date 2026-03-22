@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <title>Rumana Yasmin | Home</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
-    <strong>Rumana Yasmin</strong>
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <img src="profile.jpg" alt="Profile Photo">
+    <h2>Rumana Yasmin</h2>
+    <p>Lecturer, CSE</p>
+
     <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="education.html">Education</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="publications.html">Publications</a></li>
@@ -18,29 +22,28 @@
         <li><a href="lab.html">Lab</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
-</nav>
-
-<header>
-    <h1>Rumana Yasmin</h1>
-    <p>Lecturer | Computer Science & Engineering</p>
-    <p>Specializing in Data Science, AI, and Machine Learning</p>
-</header>
-
-<div class="container">
-    <h2>Introduction</h2>
-    <div class="card">
-        <p>
-            Welcome to my academic portfolio. I am a Lecturer in Computer Science & Engineering 
-            with research interests in Artificial Intelligence, Data Science, and Explainable AI.
-            This website highlights my academic background, research contributions, teaching, 
-            and professional activities.
-        </p>
-    </div>
 </div>
 
-<footer>
-    © 2026 Rumana Yasmin
-</footer>
+<!-- MAIN CONTENT -->
+<div class="main">
+
+    <h1>Welcome</h1>
+
+    <div class="card">
+        <p>
+            I am a Lecturer in Computer Science & Engineering with a focus on 
+            Artificial Intelligence, Data Science, and Explainable AI.
+        </p>
+    </div>
+
+    <h2>Curriculum Vitae</h2>
+
+    <a href="cv.pdf" class="btn" download>Download CV</a>
+
+    <!-- CV PREVIEW -->
+    <iframe src="cv.pdf"></iframe>
+
+</div>
 
 </body>
 </html>
