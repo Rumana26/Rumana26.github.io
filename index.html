@@ -2,245 +2,44 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rumana Yasmin | Academic Portfolio</title>
-
-<style>
-:root {
-    --primary: #1e3a8a;
-    --accent: #2563eb;
-    --light: #f8fafc;
-    --dark: #1f2937;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background: var(--light);
-    color: var(--dark);
-    line-height: 1.6;
-}
-
-/* NAVBAR */
-nav {
-    background: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    z-index: 1000;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 8%;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--dark);
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: var(--accent);
-}
-
-/* HERO */
-header {
-    padding: 140px 8% 80px;
-    background: linear-gradient(to right, var(--primary), var(--accent));
-    color: white;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-}
-
-header p {
-    margin-top: 10px;
-    font-size: 1.1rem;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: white;
-    color: var(--primary);
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.button:hover {
-    background: #e2e8f0;
-}
-
-/* SECTIONS */
-section {
-    padding: 80px 8%;
-}
-
-section h2 {
-    margin-bottom: 20px;
-    color: var(--primary);
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-/* LINKS */
-.link-btn {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 8px 15px;
-    border-radius: 5px;
-    background: var(--primary);
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-
-.link-btn:hover {
-    background: var(--accent);
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: var(--dark);
-    color: white;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-</style>
+<title>Rumana Yasmin | Home</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav>
-    <div class="nav-container">
-        <strong>Rumana Yasmin</strong>
-        <ul>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#lab">Lab</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
+    <strong>Rumana Yasmin</strong>
+    <ul>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 </nav>
 
-<!-- HERO -->
 <header>
     <h1>Rumana Yasmin</h1>
-    <p>Lecturer | Computer Science & Engineering | Data Science & AI</p>
-    <a href="cv.pdf" class="button" download>Download CV</a>
+    <p>Lecturer | Computer Science & Engineering</p>
+    <p>Specializing in Data Science, AI, and Machine Learning</p>
 </header>
 
-<!-- EDUCATION -->
-<section id="education">
-    <h2>Education</h2>
+<div class="container">
+    <h2>Introduction</h2>
     <div class="card">
-        <h3>MSc in Computer Science</h3>
-        <p>University Name | Year</p>
+        <p>
+            Welcome to my academic portfolio. I am a Lecturer in Computer Science & Engineering 
+            with research interests in Artificial Intelligence, Data Science, and Explainable AI.
+            This website highlights my academic background, research contributions, teaching, 
+            and professional activities.
+        </p>
     </div>
-    <div class="card">
-        <h3>BSc in Computer Science & Engineering</h3>
-        <p>University Name | Year</p>
-    </div>
-</section>
-
-<!-- RESEARCH INTERESTS -->
-<section id="research">
-    <h2>Research Interests</h2>
-    <div class="card">
-        <ul>
-            <li>Explainable Artificial Intelligence (XAI)</li>
-            <li>Data Science & Machine Learning</li>
-            <li>Natural Language Processing</li>
-            <li>AI for Health</li>
-        </ul>
-    </div>
-</section>
-
-<!-- PUBLICATIONS -->
-<section id="publications">
-    <h2>Publications</h2>
-    <div class="card">
-        <p><strong>Paper Title</strong><br>
-        Journal/Conference Name, Year</p>
-    </div>
-</section>
-
-<!-- COURSES TAUGHT -->
-<section id="courses">
-    <h2>Courses Taught</h2>
-    <div class="card">
-        <ul>
-            <li>Data Structures & Algorithms</li>
-            <li>Compiler Design</li>
-            <li>Database Systems</li>
-            <li>Machine Learning</li>
-        </ul>
-    </div>
-</section>
-
-<!-- LAB RESPONSIBILITIES -->
-<section id="lab">
-    <h2>Lab Responsibilities</h2>
-    <div class="card">
-        <ul>
-            <li>Lab Incharge – Computer Labs Management</li>
-            <li>Supervision of Lab Technicians & Attendants</li>
-            <li>ML & Data Mining Lab Design</li>
-            <li>Software & Infrastructure Maintenance</li>
-        </ul>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-    <h2>Professional Links</h2>
-    <div class="card">
-        <a href="https://scholar.google.com" target="_blank" class="link-btn">Google Scholar</a>
-        <a href="https://github.com/yourusername" target="_blank" class="link-btn">GitHub</a>
-        <p style="margin-top:15px;">Email: your-email@example.com</p>
-    </div>
-</section>
+</div>
 
 <footer>
-    © 2026 Rumana Yasmin | Academic Portfolio
+    © 2026 Rumana Yasmin
 </footer>
 
 </body>
